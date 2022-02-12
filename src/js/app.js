@@ -16,7 +16,7 @@ console.log(team.members.has(bowman));
 team.addAll(bowman, swordsman, magician, daemon, undead, zombie);
 console.log(team.members);
 console.log(team.toArray());
-console.log(team.iterator());
+team.iterator();
 const generator = team[Symbol.iterator]();
 for (const value of generator) {
   console.log(value);
